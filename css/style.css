@@ -9,7 +9,7 @@ html, body {
 body {
     font-family: 'Poppins', sans-serif;
     background: url('../images/istockphoto-697945296-612x612.jpg') no-repeat center center scroll;
-    background-size: 50%;
+    background-size: 100% 65%;
     background-position: center bottom;
     color: #610000;
     opacity: 0;
@@ -28,15 +28,16 @@ body.fade-in {
 
 header {
     text-align: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url('../images/GSGlogo.png') no-repeat center center/cover;
-    background-size: 50% 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url('../images/photo.jpg') no-repeat center center/cover;
+    background-size: 18% 100%;
+    background-position-x: left;
     padding: 20px 20px;
     color: rgb(97, 0, 0);
 }
 
 header h1 {
     font-size: 3em;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 header p {
