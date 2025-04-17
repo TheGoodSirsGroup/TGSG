@@ -30,7 +30,7 @@ header {
     text-align: center;
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url('../images/photo.jpg') no-repeat center center/cover;
     background-size: 18% 100%;
-    background-position-x: left;
+    background-position: center
     padding: 20px 20px;
     color: rgb(97, 0, 0);
 }
