@@ -9,9 +9,9 @@ html, body {
 body {
     font-family: 'Poppins', sans-serif;
     background: url('../images/johannesburg-4322256_1280.jpg') no-repeat center center scroll;
-    background-size: 100% 77%;
-    background-position: center bottom;
-    color: #610000;
+    background-size: 100%;
+    background-position: center;
+    color: #b10000;
     opacity: 0;
     transition: opacity 1s ease-in;
 }
@@ -28,11 +28,12 @@ body.fade-in {
 
 header {
     text-align: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7)), url('../images/2025-04-20 - Kashif.jpg') no-repeat center center/cover;
-    background-size: 18% 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.418), rgba(255, 255, 255, 0.479)), url('../images/2025-04-20 - Kashif.jpg') no-repeat center center/cover;
+    background-size: 40% 40%;
+    background-repeat: repeat;
     background-position: center
     padding: 20px 20px;
-    color: rgb(97, 0, 0);
+    color: #b10000;
 }
 
 header h1 {
@@ -46,7 +47,7 @@ header p {
 }
 
 nav {
-    background: #550101;
+    background: #b10000;
     text-align: center;
     padding: 15px 10px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
@@ -77,7 +78,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #550101;
+    color: #b10000;
 }
 
 main.content {
@@ -94,7 +95,7 @@ main.content {
 
 footer {
     text-align: center;
-    background-color: #550101;
+    background-color: #b10000;
     color: white;
     padding: 20px;
 }
