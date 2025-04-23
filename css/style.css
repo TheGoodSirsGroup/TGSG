@@ -11,7 +11,7 @@ body {
     background: url('../images/johannesburg-4322256_1280.jpg') no-repeat center center scroll;
     background-size: 100%;
     background-position: center;
-    color: #b10000;
+    color: #fffcfc;
     opacity: 0;
     transition: opacity 1s ease-in;
 }
