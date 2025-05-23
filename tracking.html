@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parcel Tracking | GSG Couriers</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('images/johannesburg-4322256_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+    }
+
+    .tracking-container input {
+      width: 80%;
+      padding: 12px;
+      margin-top: 15px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    .tracking-container button {
+      margin-top: 15px;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0078D4;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .tracking-container button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+  <script>
+    function redirectToSpeedafTracking() {
+      const trackingNumber = document.getElementById("trackingNumber").value.trim();
+      if (trackingNumber === "") {
+        alert("Please enter a valid tracking number.");
+        return;
+      }
+      // Corrected query string for Speedaf
+      const speedafTrackingURL = `https://speedaf.com/cn-en/send-parcel?trackNumbers=${encodeURIComponent(trackingNumber)}`;
+      window.open(speedafTrackingURL, '_blank');
+    }
+  </script>
+</head>
+<body>
+  <div class="overlay">
+    <div class="tracking-container">
+      <h1>Track Your Parcel</h1>
+      <p>Enter your waybill or tracking number below:</p>
+      <input type="text" id="trackingNumber" placeholder="e.g. SF123456789ZA" required>
+      <br>
+      <button onclick="redirectToSpeedafTracking()">Track Parcel</button>
+    </div>
+  </div>
+</body>
+</html>

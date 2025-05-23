@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../images/johannesburg-4322256_1280.jpg') no-repeat center center scroll;
+    background-size: 100%;
+    background-position: center;
+    color: #fffcfc;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.418), rgba(255, 255, 255, 0.479)), url('../images/2025-04-20 - Kashif.jpg') no-repeat center center/cover;
+    background-size: 40% 40%;
+    background-repeat: repeat;
+    background-position: center
+    padding: 20px 20px;
+    color: #b10000;
+}
+
+.tracking-container {
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tracking-container input {
+  width: 80%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.tracking-container button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0078D4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.tracking-container button:hover {
+  background-color: #005fa3;
+}
+
+.search-wrapper {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.search-wrapper input {
+  width: 70%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+.search-wrapper button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #0078D4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-wrapper button:hover {
+  background-color: #005fa3;
+}
+
+header h1 {
+    font-size: 4.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+nav {
+    background: #b10000;
+    text-align: center;
+    padding: 15px 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.2s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #b10000;
+}
+
+main.content {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(228, 228, 228, 0.4);
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeUp 1s ease;
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    background-color: #b10000;
+    color: white;
+    padding: 20px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
